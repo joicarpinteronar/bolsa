@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Suite a2censo" thread-count="3" parallel="methods">
+    <listeners>
+        <listener class-name="com.acenso.test.utils.Listeners.TestListener"/>
+    </listeners>
+    <test name="Crear Nueva Cuenta a2censo" parallel="methods">
+    <classes>
+        <class name="com.acenso.test.RegistroTest"/>
+    </classes>
+</test>
+<test name="Enviar Certifcado Retencion en la Fuente" parallel="methods">
+    <classes>
+        <class name="com.acenso.test.CertificadosTest"/>
+    </classes>
+</test>
+</suite>
